@@ -13,6 +13,6 @@ server:
 
 eureka:
   client:
-    enabled: false
+    enabled: true
     server-url:
       defaultZone: http://eureka-server:8761/eureka/
