@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/basic_account
+    url: jdbc:mysql://mysql:3306/basic_account
     username: admin
     password: admin
   jpa:
@@ -14,5 +14,5 @@ server:
 eureka:
   client:
     enabled: true
-    server-url:
+    service-url:
       defaultZone: http://eureka-server:8761/eureka/
