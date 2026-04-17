@@ -8,6 +8,13 @@ spring:
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
         spring.json.trusted.packages: "*"
+  cloud:
+    config:
+      retry:
+        initial-interval: 1000
+        multiplier: 1.5
+        max-interval: 5000
+        max-attempts: 6
   datasource:
     url: jdbc:mysql://mysql:3306/basic_account
     username: admin
